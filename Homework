@@ -1,0 +1,37 @@
+<html>
+    <body>
+        <h1>Mapping and Sorting</h1>
+     
+        <button onclick="asc()">Arrange in Ascending Order</button>
+        <button onclick="desc()">Arrange in Descending Order</button>
+        <p id="teny"></p>
+        <p id="twey"></p>
+        <p id="asc"></p>
+        <p id="desc"></p>
+
+        <script>
+            var rl = [1, 2, 3, 4, 5]
+
+          
+
+            function myf20(rl) {
+                    return rl * 20;
+                }
+
+
+            function asc() {
+                    rl.sort(function(a, b){return a - b})
+                    document.getElementById("asc").innerHTML = rl;
+                }
+
+            function desc() {
+                    rl.sort(function (a, b) { return b - a })
+                    document.getElementById("desc").innerHTML = rl;
+                }    
+
+            var twe = numb.map(myf20);
+            document.getElementById("twey").innerHTML = twe
+
+        </script>
+    </body>
+</html>
