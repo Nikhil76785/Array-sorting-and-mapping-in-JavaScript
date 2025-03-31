@@ -1,0 +1,42 @@
+<html>
+    <body>
+        <h1>Mapping in JavaScript</h1>
+        
+        <p id="demo20"></p>
+        <p id="demo40"></p>
+        <p id="demo80"></p>
+        <p id="demo2"></p>
+
+        <script>
+            var numb = [575, 88, 35, 90, 31];
+
+            function myf20(num) {
+                return num * 20;
+            }
+
+            function myf40(num) {
+                    return num * 40;
+                }
+
+            function myf80(num) {
+                    return num * 80;
+                }
+
+            function myf2(num) {
+                    return num / 2;
+                }
+
+            var twe = numb.map(myf20);
+            document.getElementById("demo20").innerHTML = twe
+
+            var fort = numb.map(myf40);
+                document.getElementById("demo40").innerHTML = fort
+
+            var eig = numb.map(myf80);
+                document.getElementById("demo80").innerHTML = eig
+
+            var t = numb.map(myf2);
+                document.getElementById("demo2").innerHTML = t
+        </script>
+    </body>
+</html>
