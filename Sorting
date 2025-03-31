@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <h1>Sorting In Java Script</h1>
+        
+        <button onclick="asc()">Ascending Order</button>
+        <button onclick="desc()">Descending Order</button>
+
+        <p id="demo"></p>
+
+        <script>
+            var num = [522, 156, 173, 123, 242, 433, 575];
+            document.getElementById("demo").innerHTML = num;
+
+            function asc() {
+                num.sort(function(a, b){return a - b});
+                document.getElementById("demo").innerHTML = num;
+            }
+
+            function desc() {
+                    num.sort(function (a, b) { return b - a });
+                    document.getElementById("demo").innerHTML = num;
+                }
+        </script>
+    </body>
+</html>
